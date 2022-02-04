@@ -3,12 +3,26 @@
 <template>
     <h1 class = center>Gamer's Heaven</h1>
     <div class = center>
-        About / Products / Contact
+        <a onclick={goToAbout}>About</a> / <a onclick={goToProducts}>Products</a> / <a onclick={goToContact}>Contact</a>
     </div>
 
-    <div>
-        This line will be replaced with the "About" conditional render on successful code.
+    <div if:true={isMain}>
+        
+        <br>This line will be replaced with the "About" conditional render on successful code.
+    
     </div>
+    
+    
+<template if:true={isAbout}>
+    <my-about></my-about>
+</template>
+<template if:true={isProduct}>
+    <my-products></my-products>
+</template>
+<template if:true={isContact}>
+    <my-contact></my-contact>
+</template>
+
     
 </template>
 
