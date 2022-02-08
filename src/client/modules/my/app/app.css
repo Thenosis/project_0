@@ -30,7 +30,7 @@
 }
 
 img {
-    max-width: 150px;
+    max-width: 350px;
 }
 
 .greeting {
@@ -41,4 +41,6 @@ img {
     text-align: center;
     background-color: rgb(85, 10, 81);
     color: rgb(213, 247, 175);
+    margin-inline-start: 200px;
+    margin-inline-end: 200px;
 }
