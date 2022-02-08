@@ -2,27 +2,30 @@
 
 <template>
     
-    <h1 class = center>Gamer's Heaven</h1>
-    <div class = center>
-        <a onclick={goToHome}>Home</a> / <a onclick={goToAbout}>About</a> / <a onclick={goToProducts}>Products</a> / <a onclick={goToContact}>Contact</a>
-    </div>
+        <h1 class = header>DracoHouse Customs</h1>
+        <div class = center>
+            <a onclick={goToHome}>Home</a> / <a onclick={goToAbout}>About</a> / <a onclick={goToProducts}>Products</a> / <a onclick={goToContact}>Contact</a>
+        </div>
 
-    <div if:true={isHome}>
+        <div class = center if:true={isHome}>
         
-        <br>Welcome to Gamer's Heaven. A place for gamers, nerds, and otaku of all types!!!
+            <br>Welcome to DracoHouse Customs. Your #1 shop for all your custom computer needs.
+            <br>We have everything from water-cooling to GPUs all wrapped up in shiny new cases.
+            <br>Fill out your order form today!
+
+            <br><img src=".resources/coolermastermastercase.jpg" alt="Cooler Master Mastercase">
     
-    </div>
+        </div>
     
-    
-<template if:true={isAbout}>
-    <my-about></my-about>
-</template>
-<template if:true={isProduct}>
-    <my-products></my-products>
-</template>
-<template if:true={isContact}>
-    <my-contact></my-contact>
-</template>
+        <template if:true={isAbout}>
+            <my-about></my-about>
+        </template>
+        <template if:true={isProduct}>
+            <my-products></my-products>
+        </template>
+        <template if:true={isContact}>
+            <my-contact></my-contact>
+        </template>
 
     
 </template>

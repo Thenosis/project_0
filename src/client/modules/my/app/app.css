@@ -37,3 +37,8 @@ img {
     height: 75px;
 }
 
+.header{
+    text-align: center;
+    background-color: rgb(85, 10, 81);
+    color: rgb(213, 247, 175);
+}
