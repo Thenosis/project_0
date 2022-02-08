@@ -4,7 +4,7 @@
     
         <h1 class = header>DracoHouse Customs</h1>
         <div class = center>
-            <a onclick={goToHome}>Home</a> / <a onclick={goToAbout}>About</a> / <a onclick={goToProducts}>Products</a> / <a onclick={goToContact}>Contact</a>
+            <a onclick={goToHome}>Home</a> / <a onclick={goToProducts}>Products</a> / <a onclick={goToContact}>Contact</a>
         </div>
 
         <div class = center if:true={isHome}>
@@ -23,16 +23,12 @@
     
         </div>
     
-        <template if:true={isAbout}>
-            <my-about></my-about>
-        </template>
         <template if:true={isProduct}>
-            <my-products></my-products>
+            <my-products class = center></my-products>
         </template>
         <template if:true={isContact}>
-            <my-contact></my-contact>
+            <my-contact class = center></my-contact>
         </template>
-
     
 </template>
 

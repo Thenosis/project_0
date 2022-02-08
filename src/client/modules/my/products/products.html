@@ -1,9 +1,35 @@
 <template>
     
-    <br>We have many different products ranging from board games to collectibles.
-    
     <div>
-    <br><img src="./resources/boardGames.jpg" alt="Board Games"> <img>Collectibles <img>Merchandise
+        <br>We offer a wide variety of products if you would to build your own PC or, 
+        <br>if you fill out our questionairre below we can build one to the specs that you request.
     </div>
+    <h1>
+        Customer Computer Questionairre
+    </h1>
+    <form>
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"><br><br>
+        <label for="use">What are you using the computer for? </label>
+        <input type="text" id="use" name="use"><br><br> 
+        <label for="budget">What is your budget? </label>
+        <input type="text" id="budget" name="budget"><br><br>
+        <!--<input onclick={goToSubmit} type="submit" value="Submit">-->
+    </form>
+    <div>
+        <button onclick={goToSubmit}>Submit</button>
+    </div>
+    <p>Click the submit button to send us this information in an email so that we can get to building your computer right away!</p>
+    <p>By sending in this form you authorize us to email you with details and requests for your build.</p>
+
+    <template if:true={isSubmit}>
+        <my-submit class="center"></my-submit>
+    </template>
+
+
 
 </template>
