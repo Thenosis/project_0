@@ -1,6 +1,6 @@
 # project_0
 
-Here will be some information about the app.
+Project 0 LWC OSS external site.
 
 ## How to start?
 
